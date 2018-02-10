@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Ripple Paper Wallet</title>
+<link rel="stylesheet" href="./css/normalize.css">
+<link rel="stylesheet" href="./css/style.css">
+<script src="./js/lodash.min.js"></script>
+<script src="./js/ripple-0.18.0.js"></script>
+<meta name="author" content="rakuishi">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div class="box">
+  <a class="box-title" href="https://github.com/rakuishi/ripple-paper-wallet" target="_balnk">Ripple Paper Wallet</a>
+  <textarea id="address" class="box-textarea" rows="3" readonly onclick="this.select();"></textarea>
+</div>
+
+<script>
+// https://github.com/ripple/ripple-lib/blob/develop/docs/index.md#generateaddress
+var api = new ripple.RippleAPI();
+var address = api.generateAddress();
+document.getElementById('address').innerHTML = JSON.stringify(address);
+</script>
+
+</body>
+</html>
