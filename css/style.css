@@ -27,10 +27,9 @@ a:hover { text-decoration: underline; }
   width: 100%;
   max-width: 375px;
   margin: auto;
-  border-radius: 4px;
 }
 
-.box-title {
+.box-header {
   display: block;
   height: 52px;
   margin: 0;
@@ -48,7 +47,7 @@ a:hover { text-decoration: underline; }
 .box-textarea {
   display: block;
   width: 100%;
-  height: 280px;
+  height: 272px;
   padding: 16px;
   outline: none;
   resize: none;
