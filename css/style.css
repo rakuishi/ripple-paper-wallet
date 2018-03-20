@@ -19,8 +19,15 @@ a { color: rgb(34, 152, 214); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 .container {
-  display: flex;
+  display: block;
   height: 100%;
+  padding: 16px;
+}
+
+@media (min-width: 480px) {
+  .container {
+    display: flex;
+  }
 }
 
 .box {
@@ -62,4 +69,5 @@ a:hover { text-decoration: underline; }
 
 .box-footer {
   margin-top: 16px;
+  font-size: 90%;
 }
